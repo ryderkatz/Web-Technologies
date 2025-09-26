@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SLUview — Mini Yelp Replica</title>
+  <link rel="stylesheet" href="slu.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>SLUview</h1>
+    <p class="tagline">simple local reviews, fast.</p>
+  </header>
+
+  <main class="grid">
+    <!-- Column A -->
+    <aside class="col col-a">
+      <h2 class="section-title">Filters</h2>
+
+      <div class="filter-group">
+        <label class="filter-label" for="category">Category</label>
+        <select id="category">
+          <option>All</option>
+          <option>Restaurant</option>
+          <option>Café</option>
+          <option>Attraction</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label" for="price">Price</label>
+        <select id="price">
+          <option>Any</option>
+          <option>$</option>
+          <option>$$</option>
+          <option>$$$</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label" for="rating">Rating</label>
+        <select id="rating">
+          <option>Any</option>
+          <option>3.5+</option>
+          <option>4.0+</option>
+          <option>4.5+</option>
+        </select>
+      </div>
+
+      <nav class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#latest">Latest Reviews</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+
+    <!-- Column B -->
+    <section class="col col-b" id="featured">
+      <h2 class="section-title">Featured</h2>
+
+      <article class="biz-card">
+        <header>
+          <h3 class="biz-name">The Norbert</h3>
+          <div class="meta">
+            <span class="chip">Restaurant</span>
+            <span class="chip">West Bend, WI</span>
+            <span class="chip price">$$</span>
+            <span class="chip rating">4.6★</span>
+          </div>
+        </header>
+        <p class="blurb">Modern American plates, local vibe, and consistently strong reviews for service and quality.</p>
+      </article>
+
+      <article class="biz-card">
+        <header>
+          <h3 class="biz-name">Blueprint Coffee</h3>
+          <div class="meta">
+            <span class="chip">Café</span>
+            <span class="chip">St. Louis, MO</span>
+            <span class="chip price">$</span>
+            <span class="chip rating">4.5★</span>
+          </div>
+        </header>
+        <p class="blurb">Third-wave coffee and pastries; popular study spot with rotating single-origin beans.</p>
+      </article>
+
+      <article class="biz-card">
+        <header>
+          <h3 class="biz-name">Forest Park Boathouse</h3>
+          <div class="meta">
+            <span class="chip">Attraction</span>
+            <span class="chip">St. Louis, MO</span>
+            <span class="chip price">$$</span>
+            <span class="chip rating">4.4★</span>
+          </div>
+        </header>
+        <p class="blurb">Scenic lake views, casual eats, and boat rentals in one of the largest urban parks.</p>
+      </article>
+    </section>
+
+    <!-- Column C -->
+    <section class="col col-c" id="latest">
+      <h2 class="section-title">Latest Reviews</h2>
+
+      <article class="review-card">
+        <header class="review-head">
+            <span class="reviewer">Sandy C</span>
+            <span class="stars">5 of 5 bubbles★</span>
+            <time class="date">Written August 1, 2024</time>
+        </header>
+        <p class="review-text">In a word...Wow! We chose The Norbert because it had many options that were gluten free, this is a struggle at many restaurants . But it is clear at The Norbert the chefs understand that you should let a foods natural flavors come through and not cover them by dredging the food in flour. They offer up WI classics like cheescurds and fried chicken in a delicate coating of flour alternatives to still give you the classic food but keep it fresh and light.  The flavor profiles of everything was of the charts.  We had the cheese curds, brussel sprouts, fried chicken and steak tacos and EVERYTHING was amazing.  The waitstaff is friendly and responsive to your needs.  The owner is clear and present and working his tail off to make your experience the best! As we were preparing to leave, it was pouring rain, the owner thought he had some umbrellas stashed and stopped us to go looking for them. While he couldn&#x27;t find them, the offer and time he spent to do this was very much appreciated.  Then his staff suggested we come back in for some dessert. We said there was nothing gluten free in desserts and we were told, well, we may have something for you.  The amazing chef, I think his name was Jay, made us an Australian Pavlova.  Again, it had the most amazing flavor profile and texture variation, of any dessert we have ever had.  West Bend has a hidden gem among it, The Norbert is a must stop for everyone, but make sure you leave us a table, because we will be back!</p>
+        </article>
+
+        <article class="review-card">
+        <header class="review-head">
+            <span class="reviewer">The Bearded Traveler</span>
+            <span class="stars">5 of 5 bubbles★</span>
+            <time class="date">Written January 16, 2024</time>
+        </header>
+        <p class="review-text">The passion that goes into the food here is easily noticeable after your first bite. We loved everything we ate. The flavors are explosive and there is nothing like this place in the area. Staff is professional, well dressed and friendly. The restaurant and kitchen are very clean as are the bathrooms. You can tell the owner and employees take great pride in this establishment!</p>
+        </article>
+
+        <article class="review-card">
+        <header class="review-head">
+            <span class="reviewer">Thomas D</span>
+            <span class="stars">5 of 5 bubbles★</span>
+            <time class="date">Written December 23, 2023</time>
+        </header>
+        <p class="review-text">We live in West Bend and were planning to have dinner at a fine restaurant in Milwaukee. It was getting late so we decided to have dinner in West Bend at The Norbert, and were glad we did. You don’t have to travel to Milwaukee for fine dining, wonderful drinks and impeccable friendly service.</p>
+        </article>
+
+        <article class="review-card">
+        <header class="review-head">
+            <span class="reviewer">Bender Lifer</span>
+            <span class="stars">4 of 5 bubbles★</span>
+            <time class="date">Written November 14, 2023</time>
+        </header>
+        <p class="review-text">What a fabulous gem in West Bend.  The best thing going in town in my opinion.  Creative menu items.  Fantastic bar staff.  A fabulous place to hang out.  Newly remodeled.  Really nice!  
+        Only drawback... no more musical entertainment.  Many of us in town miss that.  :(</p>
+        </article>
+
+        <article class="review-card">
+        <header class="review-head">
+            <span class="reviewer">Mark60187</span>
+            <span class="stars">5 of 5 bubbles★</span>
+            <time class="date">Written April 16, 2023</time>
+        </header>
+        <p class="review-text">Drove from where we were staying in Brown Deer to check out the Norbert after reading the reviews on Trip Advisor. Positive reviews are spot on. Wife is still trying to figure out why her Cosmo was so good. We tried 3 apps and 4 dishes and wish we had tried more. Everything was excellent except the desert we ordered to go, could use a little more creativity on those options or maybe we were just to full :)</p>
+        </article>
+
+        <article class="review-card">
+        <header class="review-head">
+            <span class="reviewer">majormoe</span>
+            <span class="stars">5 of 5 bubbles★</span>
+            <time class="date">Written March 24, 2023</time>
+        </header>
+        <p class="review-text">Small and regular size menu options with ever changing options and while the menu isn&#x27;t large it is filled with dishes that look and taste amazing with very reasonable prices.The servers were very friendly and attentive and while the wine list was small,it had glasses and bottles in the $8/$46 range.Very nice layout with attractive niknaks on walls.But we came here for the food and it did not disappoint us.We started with the best dish we tried Octopus(gf),made with fingerling potatoes,olives,chorizo,rainbow chard,in a amazing red pepper jus for $19 and a large serving size for 2 people.We then had a small plate size portion of the house pasta(v)cavatelli,tomato and parmesan brodo,fresh mozzarella,basil oil $15 and it was perfect and not overcooked and vert tasteful.For mains the wife had Ruby red trout with beech mushrooms,red onion,scallion,mint ,cilentro,very light and refreshing served in a amazing tamarind and lemongrass broth$22,truly one of the best trout dishes ever tried.I ordered the Steak Frites $26 7 oz ribeye,served sliced  with mushrooms and perfectly done french fries with a very light brown gravy on them,the steak wasn&#x27;t prime at that price but was tasty and tender.For dessert we had the incredible sea salt and caramel Creme Brulee which was very creamy and tasteful.great restaurant at reasoable prices with amazing presentation and tastes</p>
+        </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 SLUview (class project)</small>
+  </footer>
+
+</body>
+</html>
